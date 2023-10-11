@@ -1,7 +1,7 @@
-class Penjumlahan {
-    private int angka1;
+class Aritmatika {
+    /* private int angka1;
     private int angka2;
-    private int hasil;
+    private int hasil; */
 
     /* //Contructor
     public Penjumlahan(int input1, int input2){
@@ -10,14 +10,28 @@ class Penjumlahan {
     } */
 
     //Mutator
-    public void setAngka(int input1, int input2){
+    /* public void setAngka(int input1, int input2){
         this.angka1 = input1;
         this.angka2 = input2;
+    } */
+
+    public int getPenjumlahan(int input1, int input2){
+        int hasil = input1 + input2;
+        return hasil;
     }
 
+    public int getPengurangan(int input1, int input2){
+        int hasil = input1 + input2;
+        return hasil;
+    }
 
-    public int getHasil(){
-        int hasil = this.angka1 + this.angka2;
+    public int getPerkalian(int input1, int input2){
+        int hasil = input1 * input2;
+        return hasil;
+    }
+
+    public int getPembagian(int input1, int input2){
+        int hasil = input1 / input2;
         return hasil;
     }
 
@@ -41,16 +55,31 @@ class Persegi {
         System.out.print(this.panjangsisi + " ");
     }
 
-    public int getHasil(){
-        Penjumlahan jumlah = new Penjumlahan();
-        int hasil = 0 ;
+    public int getKeliling(){
+        Aritmatika jumlah = new Aritmatika();
+        /* int hasil = 0 ;
         for(int i=0;i<2;i++){
-            jumlah.setAngka(this.panjangsisi, this.panjangsisi);
-            hasil+= jumlah.getHasil();
-        }
+            hasil += jumlah.getPenjumlahan(this.panjangsisi, this.panjangsisi);
+        } */
+        int hasil = jumlah.getPenjumlahan(jumlah.getPenjumlahan(this.panjangsisi, this.panjangsisi), jumlah.getPenjumlahan(this.panjangsisi, this.panjangsisi));
         return hasil;
     }
 
+    public int getLuas(){
+        Aritmatika kali = new Aritmatika();
+        int hasil = kali.getPerkalian(this.panjangsisi, this.panjangsisi);
+        return hasil;
+    }
+
+}
+
+
+class kubus {
+    sisi[]
+}
+
+class prisma {
+    
 }
 
 
@@ -58,10 +87,13 @@ public class Main {
     public static void main(String[] args) throws Exception {
         int hasil;
         Persegi persegi = new Persegi(5);
-        hasil = persegi.getHasil();
-        System.out.print("Hasil keliling persegi dengan panjang sisi ");
+
+        hasil = persegi.getKeliling();
+        System.out.print("Keliling persegi dengan sisi ");
         persegi.printSisi();
         System.out.print("adalah : ");
         System.out.println(hasil);
+
+
     }
 }
