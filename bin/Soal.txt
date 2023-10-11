@@ -1,0 +1,5 @@
+Cari keliling persegi dengan OOP Java dengan proses aritmatika penjumlahan hanya dengan menggunakan Class penjumlahan, tidak boleh perkalian.
+
+- Harus menggunakan fungsi penjumlahan di class lain.
+- Tidak boleh menggunakan proses aritmatika di class persegi, proses penjumlahan hanya boleh dilakukan di class penjumlahan.
+- Fungsi penjumlahannya itu hanya boleh a + b. Sedangkan rumus keliing persegi itu sisi + sisi + sisi + sisi.
