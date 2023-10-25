@@ -1,0 +1,160 @@
+class Aritmatika {
+    /* private int angka1;
+    private int angka2;
+    private int hasil; */
+
+    /* //Contructor
+    public Penjumlahan(int input1, int input2){
+        this.angka1 = input1;
+        this.angka2 = input2;
+    } */
+
+    //Mutator
+    /* public void setAngka(int input1, int input2){
+        this.angka1 = input1;
+        this.angka2 = input2;
+    } */
+
+    public int getPenjumlahan(int input1, int input2){
+        int hasil = input1 + input2;
+        return hasil;
+    }
+
+    public int getPengurangan(int input1, int input2){
+        int hasil = input1 + input2;
+        return hasil;
+    }
+
+    public int getPerkalian(int input1, int input2){
+        int hasil = input1 * input2;
+        return hasil;
+    }
+
+    public int getPembagian(int input1, int input2){
+        int hasil = input1 / input2;
+        return hasil;
+    }
+
+}
+
+
+class Persegi {
+    private int panjangsisi;
+
+    //Constructor
+    public Persegi(int pangjangsisi){
+        this.panjangsisi = pangjangsisi;
+    }
+
+    //Mutator
+    public void setPanjangSisi(int panjangsisi){
+        this.panjangsisi = panjangsisi;
+    }
+
+    public void printSisi(){
+        System.out.print(this.panjangsisi + " ");
+    }
+
+    public int getKeliling(){
+        Aritmatika jumlah = new Aritmatika();
+        /* int hasil = 0 ;
+        for(int i=0;i<2;i++){
+            hasil += jumlah.getPenjumlahan(this.panjangsisi, this.panjangsisi);
+        } */
+        int hasil = jumlah.getPenjumlahan(jumlah.getPenjumlahan(this.panjangsisi, this.panjangsisi), jumlah.getPenjumlahan(this.panjangsisi, this.panjangsisi));
+        return hasil;
+    }
+
+    public int getLuas(){
+        Aritmatika mtk = new Aritmatika();
+        int hasil = mtk.getPerkalian(this.panjangsisi, this.panjangsisi);
+        return hasil;
+    }
+
+}
+
+
+class Kubus {
+    private int panjangsisi;
+
+    //Constructor
+    public Kubus(int panjangsisi){
+        this.panjangsisi = panjangsisi;
+    }
+
+    //Mutator
+    public void setPanjangSisi(int panjangsisi){
+        this.panjangsisi = panjangsisi;
+    }
+
+    public void printSisi(){
+        System.out.print(this.panjangsisi + " ");
+    }
+
+    //Rumus Volume Kubus : V=sisi^3
+    public int getVolume(){
+        Aritmatika mtk = new Aritmatika();
+        int hasil = mtk.getPerkalian(kali.getPerkalian(this.panjangsisi,this.panjangsisi),mtk.getPerkalian(this.panjangsisi,1));
+        return hasil;
+    }
+
+    //Rumus Luas Permukaan Kubus : V=6*sisi^2
+    public int getLuas(){
+        Aritmatika mtk = new Aritmatika();
+        int hasil = mtk.getPerkalian(6,mtk.getPerkalian(this.panjangsisi, this.panjangsisi));
+        return hasil;
+    }
+
+}
+
+class Prisma {
+    private int alas;
+    private int tinggi;
+
+    //Constructor
+    public Prisma(int alas, int tinggi){
+        this.alas = alas;
+        this.tinggi = tinggi;
+    }
+
+    //Mutator
+    public void setAlasTinggi(int alas, int tinggi){
+        this.alas = alas;
+        this.tinggi = tinggi;
+    }
+
+    public void printSisi(){
+        System.out.print(this.panjangsisi + " ");
+    }
+
+    //Rumus Volume Prisma Segitiga : V = Luas Alas x Tinggi
+    public int getVolume(){
+        Aritmatika mtk = new Aritmatika();
+        int hasil = mtk.getPerkalian(getLuasAlas(),this.tinggi);
+        return hasil;
+    }
+
+    //Rumus Luas Alas Prisma Segitiga  : 1/2 × a × h
+    public int getLuasAlas(){
+        Aritmatika mtk = new Aritmatika();
+        int hasil = mtk.getPerkalian(mtk.getPerkalian(mtk.getPembagian(1,2), this.alas), this.tinggi);
+        return hasil;
+    }
+    
+
+}
+
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        int hasil;
+
+        Persegi persegi = new Persegi(5);
+        Kubus kubus = new Kubus(5);
+
+
+        hasil = kubus.getLuas();
+        System.out.println(hasil);
+
+    }
+}
