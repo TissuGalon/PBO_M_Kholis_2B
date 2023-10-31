@@ -1,19 +1,4 @@
 class Aritmatika {
-    /* private double angka1;
-    private double angka2;
-    private double hasil; */
-
-    /* //Contructor
-    public Penjumlahan(double input1, double input2){
-        this.angka1 = input1;
-        this.angka2 = input2;
-    } */
-
-    //Mutator
-    /* public void setAngka(double input1, double input2){
-        this.angka1 = input1;
-        this.angka2 = input2;
-    } */
 
     public double getPenjumlahan(double input1, double input2){
         double hasil = input1 + input2;
