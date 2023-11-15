@@ -6,7 +6,7 @@ public class Aritmatika {
     }
 
     public double getPengurangan(double input1, double input2){
-        double hasil = input1 + input2;
+        double hasil = input1 - input2;
         return hasil;
     }
 

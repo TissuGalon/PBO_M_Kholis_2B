@@ -24,7 +24,7 @@ public class LimasSegiEmpat{
     /* luas persegi + 4 * luas segitiga */
     public double getLuasPermukaan(){
         Aritmatika mtk = new Aritmatika();
-        Persegi persegi = new Persegi();
+        Persegi persegi = new Persegi(sisiAlas);
         Segitiga segitiga = new Segitiga(this.sisiTegak, this.tinggiTegak);
 
         double hasil = mtk.getPenjumlahan(persegi.getLuas(), mtk.getPerkalian(4,segitiga.getLuas()));

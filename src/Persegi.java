@@ -5,6 +5,7 @@ public class Persegi {
     public Persegi(double pangjangsisi){
         this.panjangsisi = pangjangsisi;
     }
+    
     public Persegi(){
 
     }

@@ -1,6 +1,6 @@
 public class Program {
     public static void main(String[] args) throws Exception {
-        LimasSegiEmpat limas = new LimasSegiEmpat(5.0, 4.0, 6.0);
+        LimasSegiEmpat limas = new LimasSegiEmpat(7.0, 5.0, 6.0);
 
         double volume = limas.getVolume();
         System.out.println("Volume Limas Segi Empat: " + volume);
